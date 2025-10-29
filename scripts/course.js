@@ -6,27 +6,34 @@ document.addEventListener("DOMContentLoaded", () => {
 const classes = [
     {
         courseName: "WDD 130 - Web Fundamentals",
-        credits: 2
+        credits: 2,
+        completed: true
     },
     {
         courseName: "WDD 131 - Dynamic Web Fundamentals",
-        credits: 2
+        credits: 2,
+        completed: true
+
     },
     {
         courseName: "WDD 231 - Web Frontend Development I",
-        credits: 2
+        credits: 2,
+        completed: false
     },
     {
         courseName: "CSE 110 - Introduction to Programming",
-        credits: 2
+        credits: 2,
+        completed: true
     },
     {
         courseName: "CSE 111 - Programming with Functions",
-        credits: 2
+        credits: 2,
+        completed: true
     },
     {
         courseName: "CSE 210 - Programming with Classes",
-        credits: 2
+        credits: 2,
+        completed: true
     },
 ];
 
@@ -38,7 +45,8 @@ const classes = [
 
         filtered.forEach(course => {
             const p = document.createElement("p");
-            p.textContent = `${course.courseName} (${course.credits} credits)`;
+            const status = course.completed ? "✅" : "";
+            p.textContent = `${status} ${course.courseName} (${course.credits} credits)`;
             courseList.appendChild(p);
         });
         
