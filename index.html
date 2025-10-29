@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Savanah Santos</title>
+    <meta name="description" content="This page was created in 2025 by Savanah Santos for her WDD231 - Web Frontend Development I
+    class for the Course Home Page Assingment.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Sofia&display=swap" rel="stylesheet">
+    
+    <meta name="author" content="Savanah Santos">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/emoji-smile.svg" alt="Site Logo" width="45" height="45">
+        <span>Savanah Santos</span>
+        <button id="ham-button" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="content-wrapper">
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I am Savanah! I'm proud to be part of two growing businesses-Santos Roofing & Construction and Tacos Bravo. Through hard work and dedication, I've built a foundation focused on quality, honesty, and great customer service. From improving homes to serving delicious food, I enjoy creating work that brings value and satisfaction to others. My goal is to keep learning, growing, and building opportunities that make a lasting impact in my community!</p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/me-anniversery.jpg" alt="me" width="100%" height="auto" loading="lazy">
+        </section>
+        </div>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div class="course-list"></div>
+            <p class="credit-total"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="Linkedin" width="45" height="45"></a>
+            <a href="https://github.com/"><img src="images/github.svg" alt="Github" width="45" height="45"></a>
+            <a href="https://www.facebook.com/savanah.bryant"><img src="images/facebook.svg" alt="Facebook" width="45" height="45"></a>
+            <a href="https://www.instagram.com/savanahbryant50/"><img src="images/instagram.svg" alt="Instagram" width="45" height="45"></a>
+        </div>
+        <div class="copyright">
+            <p class="copyright">&copy;<span id="currentyear"></span>💕Savanah Santos💕 Utah USA</p>
+            <p class="modified">Last modified: <span id="lastmodified"></span>
+        </div>
+    </footer>
+</body>
+</html>
