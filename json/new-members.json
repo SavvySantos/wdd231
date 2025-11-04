@@ -1,0 +1,28 @@
+{
+    "family-name": "Ollerton",
+    "move_in_date": "2005-07-15",
+    "number_of_people": 4,
+    "vistited_by_bishopric": true,
+    "family-members":  [
+    {
+        "name": "Juliet",
+        "gender": "Female",
+        "birthday": "1983-05-10"
+    },
+    {
+        "name": "Troy",
+        "gender": "Male",
+        "birthday": "1980-12-12"
+    },
+    {
+        "name": "Kent",
+        "gender": "Male",
+        "birthday": "2000-06-28"
+    },
+    {
+        "name": "Julie",
+        "gender": "Female",
+        "birthday": "2012-09-01"
+    }
+    ]
+}

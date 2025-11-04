@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: "Sofia", cursive;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#cards {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
+}
+
+#cards section {
+    background-color: lightgray;
+    border: solid black 5px;
+    padding: 4rem;
+    padding-top: 0;
+    border-radius: 25px;
+}
+
+#cards h2 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#cards h2,
+#cards p,
+#cards img {
+    text-align: center;
+}
+
+#cards p {
+    font-family: "Handlee", cursive;
+    font-size: 18px;
+}
+
+#cards img {
+    box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+footer, header {
+    text-align: center;
+    background-color: rgb(61, 61, 109);
+    color: #eee;
+    padding: 1rem;
+}
+
+footer {
+    font-family: "Handlee", cursive;
+    font-size: 25px;
+}
+
