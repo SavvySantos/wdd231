@@ -17,29 +17,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="icon" href="chamber-favicon.ico">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/" alt="Chamber of Commerce" width="45" height="45">
-        <span>Cedar City Chamber of Commerce</span>
-        <button id="ham-button" class="hamburger"></button>
+        <div class="logo-title">
+            <img src="images/" alt="chamber" width="45" height="45">
+            <span>Cedar City Chamber of Commerce</span>
+        </div>
+        <button id="ham-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Discover</a></li>
-        </ul>
-    </nav>
-
-    <main></main>
-    <h1>Member Directory</h1>
+    <main>
+        <h1>Member Directory</h1>
+    </main>
     <footer>
-        <div class="chamber-info">
-
+        <div class="footer-container">
+            <div class="chamber-info">
+                <p>Cedar City Chamber of Commerce</p>
+                <p>123 Main Street, Cedar City, UT 84720</p>
+                <p>(435)123-4567</p>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="Linkedin" width="45" height="45"></a>
+                <a href="https://github.com/"><img src="images/github.svg" alt="Github" width="45" height="45"></a>
+                <a href="https://www.facebook.com/savanah.bryant"><img src="images/facebook.svg" alt="Facebook" width="45" height="45"></a>
+                <a href="https://www.instagram.com/savanahbryant50/"><img src="images/instagram.svg" alt="Instagram" width="45" height="45"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy;<span id="currentyear"></span>💕Savanah Santos💕 Utah USA</p>
+                <p class="modified">Last modified: <span id="lastmodified"></span>
+            </div>
         </div>
     </footer>
 </body>

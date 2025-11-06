@@ -1,0 +1,11 @@
+@media (min-width: 45em) {
+    #ham-button {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
