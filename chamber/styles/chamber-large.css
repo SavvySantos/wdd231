@@ -3,6 +3,10 @@
         display: none;
     }
 
+    .navigation a:hover {
+    border: solid .25rem #eee;
+}
+
     .navigation ul {
         display: flex;
         flex-direction: row;
