@@ -43,7 +43,7 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     font-size: 1.5rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
@@ -82,6 +82,7 @@ header {
 
 .hamburger::before {
     content: "\2630";
+    color: whitesmoke;
     display: block;
     font-size: 2rem;
     line-height: 1;
@@ -100,7 +101,8 @@ header {
 
 header,
 footer {
-    background-color: skyblue;
+    color: whitesmoke;
+    background-color: black;
     padding: 20px;
 }
 
