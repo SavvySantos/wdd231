@@ -3,6 +3,7 @@
     {   
         "name": "Mateo Alvarez",
         "address": "1428 Saguaro Lane, Cedar City, UT 84720",
+        "phone-number": "(435)210-9876",
         "website": "https://example.com/mateo",
         "image": "https://picsum.photos/150/150?random=1",
         "level": "Silver"
@@ -10,6 +11,7 @@
     {   
         "name": "Lily Thompson",
         "address": "904 Waverly Avenue, Parowan, UT 84761",
+        "phone-number": "(435)333-4421",
         "website": "https://example.com/lily",
         "image": "https://picsum.photos/150/150?random=2",
         "level": "Gold"
@@ -17,6 +19,7 @@
     {   
         "name": "Jordan Kim",
         "address": "57 Harborview Drive, Enoch, UT 84721",
+        "phone-number": "(435)876-1234",
         "website": "https://example.com/jordan",
         "image": "https://picsum.photos/150/150?random=3",
         "level": "Bronze"
@@ -24,6 +27,7 @@
     {   
         "name": "Sofia Morales",
         "address": "2106 Elmcrest Boulevard, Cedar City, UT 84720",
+        "phone-number": "(435)555-7890",
         "website": "https://example.com/sofia",
         "image": "https://picsum.photos/150/150?random=4",
         "level": "Gold"
@@ -31,6 +35,7 @@
     {   
         "name": "Ethan Parker",
         "address": "33 Oakridge Court, Ivins, UT 84738",
+        "phone-number": "(435)908-7654",
         "website": "https://example.com/ethan",
         "image": "https://picsum.photos/150/150?random=5",
         "level": "Silver"
@@ -38,6 +43,7 @@
     {   
         "name": "Maya Bennett",
         "address": "1182 Maple Hollow Road, Kanarraville, UT 84742",
+        "phone-number": "(435)444-3210",
         "website": "https://example.com/maya",
         "image": "https://picsum.photos/150/150?random=6",
         "level": "Bronze"
@@ -45,6 +51,7 @@
     {   
         "name": "Caleb Ruiz",
         "address": "765 Sunrise Terrace, Cedar City, UT 84720",
+        "phone-number": "(435)678-9012",
         "website": "https://example.com/caleb",
         "image": "https://picsum.photos/150/150?random=7",
         "level": "Gold"
