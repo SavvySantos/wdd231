@@ -3,13 +3,21 @@
         display: none;
     }
 
+    .navigation {
+        flex: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
     .navigation a:hover {
-    border: solid .25rem #eee;
-}
+        text-decoration: none;
+        border: solid .25rem #eee;
+    }
 
     .navigation ul {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        width: 100%;
     }
 }

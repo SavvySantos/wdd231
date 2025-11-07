@@ -12,7 +12,13 @@ header {
     justify-content: space-between;
     padding: 5px 10px;
     width: 100%;
+}
 
+h1 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 1rem 0 0;
+    text-decoration: underline;
 }
 
 .logo-title {
@@ -125,6 +131,66 @@ footer {
     color: whitesmoke;
     background-color: black;
     padding: 20px;
+}
+
+#cards {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
+}
+
+.view-toggle {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.view-toggle button {
+    margin: 0 .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: solid 2px black;
+    background-color: skyblue;
+}
+
+#cards.grid section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: skyblue;
+    border: solid black 5px;
+    padding: 4rem;
+    border-radius: 25px;
+}
+
+#cards.grid img {
+    display: block;
+}
+
+#cards.list section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#cards.list img {
+    display: none;
+}
+
+#cards h2 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#cards section img {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.65);
 }
 
 .footer-container {

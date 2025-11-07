@@ -6,10 +6,17 @@ async function getMembers() {
 
 function displayMembers(members) {
     const memberDirectory = document.querySelector('main');
+
+    const existingCards = document.querySelector('#cards');
+    if (existingCards) {
+        existingCards.remove();
+    }
+
     const membersContainer = document.createElement('div');
+    membersContainer.id = 'cards';
     membersContainer.classList.add('members', 'grid');
 
-members.forEach(member => {
+members.forEach((member) => {
     const card = document.createElement('section');
 
     const image = document.createElement('img');
@@ -21,7 +28,7 @@ members.forEach(member => {
     name.textContent = member.name;
 
     const address = document.createElement('p');
-    address.textContent = member.address;
+    address.innerHTML = member.address.replace(/, (.*)/, '<br>$1');
 
     const website = document.createElement('a');
     website.href = member.website;
@@ -34,4 +41,26 @@ members.forEach(member => {
     memberDirectory.appendChild(membersContainer);
 }
 
+    document.addEventListener('DOMContentLoaded', () => {
+        const grid = document.querySelector('#grid-view');
+        const list = document.querySelector('#list-view');
+
+        grid.addEventListener('click', () => {
+            const cards = document.querySelector('#cards');
+            if (cards) {
+                cards.classList.add('grid');
+                cards.classList.remove('list');
+            }
+    });
+
+    list.addEventListener('click', () => {
+        const cards = document.querySelector('#cards');
+        cards.classList.add('list');
+        cards.classList.remove('grid');
+    });
+});
+
+
     getMembers();
+
+
