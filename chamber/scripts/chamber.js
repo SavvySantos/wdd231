@@ -30,7 +30,10 @@ members.forEach((member) => {
     name.textContent = member.name;
 
     const address = document.createElement('p');
-    address.innerHTML = member.address.replace(/, (.*)/, '<br>$1');
+    const parts = member.address.split(',');
+    address.textContent = parts[0];
+    address.appendChild(document.createElement('br'));
+    address.appendChild(document.createTextNode(parts[1]));
 
     const number = document.createElement('p');
     number.textContent = member["phone-number"];
