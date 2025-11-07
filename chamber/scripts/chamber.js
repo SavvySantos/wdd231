@@ -23,6 +23,8 @@ members.forEach((member) => {
     image.src = member.image;
     image.alt = member.name;
     image.loading = 'lazy';
+    image.width = 150;
+    image.height = 150;
 
     const name = document.createElement('h2');
     name.textContent = member.name;
