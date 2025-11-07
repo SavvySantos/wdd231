@@ -29,11 +29,14 @@ members.forEach((member) => {
     const name = document.createElement('h2');
     name.textContent = member.name;
 
-    const address = document.createElement('p');
     const parts = member.address.split(',');
-    address.textContent = parts[0];
+    const firstPart = parts.shift();
+    const rest = parts.join(',');
+
+    const address = document.createElement('p');
+    address.textContent = firstPart;
     address.appendChild(document.createElement('br'));
-    address.appendChild(document.createTextNode(parts[1]));
+    address.appendChild(document.createTextNode(rest.trim()));
 
     const number = document.createElement('p');
     number.textContent = member["phone-number"];
