@@ -30,11 +30,14 @@ members.forEach((member) => {
     const address = document.createElement('p');
     address.innerHTML = member.address.replace(/, (.*)/, '<br>$1');
 
+    const number = document.createElement('p');
+    number.textContent = member["phone-number"];
+
     const website = document.createElement('a');
     website.href = member.website;
     website.textContent = 'Visit Website';
 
-    card.append(image, name, address, website);
+    card.append(image, name, address, number, website);
     membersContainer.appendChild(card);
 
 });
