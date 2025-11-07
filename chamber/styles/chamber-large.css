@@ -11,7 +11,7 @@
 
     .navigation a:hover {
         text-decoration: none;
-        border: solid .25rem #eee;
+        border: solid .25rem #EEEEEE;
     }
 
     .navigation ul {
