@@ -5,16 +5,8 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-    const memberDirectory = document.querySelector('main');
-
-    const existingCards = document.querySelector('#cards');
-    if (existingCards) {
-        existingCards.remove();
-    }
-
-    const membersContainer = document.createElement('div');
-    membersContainer.id = 'cards';
-    membersContainer.classList.add('members', 'grid');
+    const membersContainer = document.querySelector('#cards');
+    membersContainer.innerHTML = '';
 
 members.forEach((member) => {
     const card = document.createElement('section');
@@ -49,7 +41,6 @@ members.forEach((member) => {
     membersContainer.appendChild(card);
 
 });
-    memberDirectory.appendChild(membersContainer);
 }
 
     document.addEventListener('DOMContentLoaded', () => {
