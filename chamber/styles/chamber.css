@@ -168,16 +168,30 @@ footer {
     display: block;
 }
 
-#cards.list section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
 #cards.list img {
     display: none;
+}
+
+#cards.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#cards.list section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    pad: 1rem;
+    background-color: #87CEEB;
 }
 
 #cards h2 {
