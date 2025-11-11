@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+:root {
+    --primary-bg: #000000;
+    --primary-text: #f5f5f5;
+    --secondary-bg: #f9f9f9;
+    --accent: #ffd700;
+    --join-btn-bg : #ff6347;
+}
+
 header {
     font-family: "Playfair", serif;
     display: flex;
@@ -60,7 +68,7 @@ h1 {
 
 .navigation a {
     text-decoration: none;
-    color: #F5F5F5;
+    color: var(--primary-text);
     font-size: 1.5rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
@@ -99,7 +107,7 @@ h1 {
 
 .hamburger::before {
     content: "\2630";
-    color: #F5F5F5;
+    color: var(--primary-text);
     display: block;
     font-size: 2rem;
     line-height: 1;
@@ -113,7 +121,7 @@ h1 {
 }
 
 .navigation a.current {
-    color: #FFD700;
+    color: var(--accent);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -124,8 +132,8 @@ h1 {
 
 header,
 footer {
-    color: #F5F5F5;
-    background-color: #000000;
+    color: var(--primary-bg);
+    background-color: var(--primary-text);
     padding: 20px;
 }
 
@@ -190,7 +198,6 @@ footer {
     justify-content: space-between;
     border: 2px solid #000;
     border-radius: 1rem;
-    padding: 1rem;
     background-color: #87CEEB;
 }
 
