@@ -1,0 +1,16 @@
+[
+    {
+        "company": "Santos Roofing & Construction",
+        "image": "images/santos-logo.png",
+        "alt": "Santos Roofing & Construction team at work",
+        "description": "Santos Roofing & Construction is a locally owned business in Cedar City specializing in residential and commercial roofing, siding, and home improvement. They focus on quality workmanship, durability, and customer satisfaction. Their team provides personalized service and free estimates for every project.",
+        "specialty": "Residential and commercial roofing, construction, remodeling"
+    },
+    {
+        "company": "Tacos Bravo",
+        "image": "images/tacos-logo.jpg",
+        "alt": "Tacos Bravo",
+        "description": "Tacos Bravo is a popular Mexican food truck in Cedar City serving fresh, authentic tacos and other favorites. Known for their friendly service and vibrant flavors, they are a local hit at events, festivals, and community gatherings.",
+        "specialty": "Authentic Mexican cuisine, catering, and family-friendly dining"
+    }
+]

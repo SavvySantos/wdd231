@@ -20,4 +20,20 @@
         justify-content: space-evenly;
         width: 100%;
     }
+
+    .company-spotlights .spotlight {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 1.5rem;
+    }
+
+    .company-spotlights .spotlight img {
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    .company-spotlights .spotlight {
+        flex: 1;
+    }
 }
