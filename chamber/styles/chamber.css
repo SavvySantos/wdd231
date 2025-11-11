@@ -346,11 +346,6 @@ footer {
 .company-spotlights,
 .current-events {
     max-width: 1700px;
-}
-
-
-.company-spotlights,
-.current-events {
     align-items: center;
     gap: 2rem;
 }
