@@ -1,4 +1,12 @@
 @media (min-width: 45em) {
+    :root {
+    --primary-bg: #000000;
+    --primary-text: #f5f5f5;
+    --secondary-bg: #87CEEB;
+    --accent: #ffd700;
+    --join-btn-bg : #ff6347;
+}
+
     #ham-button {
         display: none;
     }
@@ -11,7 +19,7 @@
 
     .navigation a:hover {
         text-decoration: none;
-        border: solid .25rem #EEEEEE;
+        border: solid .25rem var(--primary-text);
     }
 
     .navigation ul {

@@ -7,9 +7,10 @@
 :root {
     --primary-bg: #000000;
     --primary-text: #f5f5f5;
-    --secondary-bg: #f9f9f9;
+    --secondary-bg: #87CEEB;
     --accent: #ffd700;
     --join-btn-bg : #ff6347;
+    --h3: #2a4d69;
 }
 
 header {
@@ -127,7 +128,7 @@ h1 {
 }
 
 .navigation a:hover {
-    text-decoration: underline .25rem #EEEEEE;
+    text-decoration: underline .25rem var(--primary-text);
 }
 
 header,
@@ -157,8 +158,8 @@ footer {
     padding: .5rem 1rem;
     cursor: pointer;
     border-radius: .5rem;
-    border: solid 2px #000000;
-    background-color: #87CEEB;
+    border: solid 2px var(--primary-bg);
+    background-color: var(--secondary-bg);
 }
 
 #cards.grid section {
@@ -166,8 +167,8 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: #87CEEB;
-    border: solid #000000 5px;
+    background-color: var(--secondary-bg);
+    border: solid var(--primary-bg) 5px;
     padding: 4rem;
     border-radius: 25px;
 }
@@ -196,9 +197,9 @@ footer {
     width: 100%;
     padding: 1rem;
     justify-content: space-between;
-    border: 2px solid #000;
+    border: 2px solid var(--primary-bg);
     border-radius: 1rem;
-    background-color: #87CEEB;
+    background-color: var(--secondary-bg);
 }
 
 #cards h2 {
@@ -208,7 +209,7 @@ footer {
 }
 
 #cards section img {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.65);
+    box-shadow: 0 4px 6px var(--primary-bg);
 }
 
 /*-------Home Page - Hero Image--------*/
@@ -233,7 +234,7 @@ footer {
     position: absolute;
     transform: translate(-50%, -50%);
     color: white;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 6px var(--primary-bg);
     width: 90%;
     text-align: center;
 }
@@ -251,7 +252,7 @@ footer {
 }
 
 .hero-text .join-us {
-    background-color: #ff6347;
+    background-color: var(--join-btn-bg);
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
@@ -278,18 +279,18 @@ footer {
 }
 
 .current-events article {
-    background-color: #f9f9f9;
+    background-color: var(--primary-text);
     border-radius: 8px;
     margin: 1rem 0;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px var(--primary-bg);
 
     width: 100%;
     max-width: 10000px;
 }
 
 .current-events h3 {
-    color: #2a4d69;
+    color: var(--h3);
     margin-bottom: 0.5rem;
 }
 
@@ -299,7 +300,7 @@ footer {
 /*-------Home Page - Companies--------*/
 .company-spotlights {
     padding: 2rem 1rem;
-    background-color: #f9f9f9;
+    background-color: var(--primary-text);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,7 +311,7 @@ footer {
 
 .company-spotlights h2 {
     text-align: center;
-    color: #2a4d69;
+    color: var(--h3);
     margin-bottom: 2rem;
 }
 
@@ -321,10 +322,10 @@ footer {
     text-align: center;
     gap: 1.5rem;
     margin-bottom: 2rem;
-    background-color: #fff;
+    background-color: var(--primary-text);
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px var(--primary-bg);
     width: 100%;
 }
 
@@ -343,7 +344,7 @@ footer {
 
 .company-spotlights .spotlights-info h3 {
     margin-top: 0;
-    color: #1a3a5a;
+    color: var(--h3);
 }
 
 .company-spotlights .spotlights-info p {
@@ -394,7 +395,7 @@ footer {
 }
 
 .social a:hover {
-    border: solid .25rem #EEEEEE;
+    border: solid .25rem var(--primary-text);
     border-radius: 35px;
     padding: 15px;
 }
