@@ -19,7 +19,7 @@
 
     .navigation a:hover {
         text-decoration: none;
-        border: solid .25rem var(--primary-text);
+        border: solid .25rem var(--primary-bg);
     }
 
     .navigation ul {
