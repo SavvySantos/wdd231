@@ -17,7 +17,6 @@ async function apiFetch() {
     }
     catch (error) {
         console.log (error);
-        weatherIcon.src = 'images/placeholder.png';
         weatherIcon.alt = 'Weather data unavailable';
         captionDesc.textContent = 'Weather data unavailable';
     }
