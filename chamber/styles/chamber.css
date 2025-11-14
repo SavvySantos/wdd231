@@ -329,10 +329,8 @@ footer {
 
 .weather-box {
     display: flex;
-    align-items: center;
     gap: 1rem;
     position: relative;
-    align-items: flex-start;
     background-color: var(--primary-text);
     border-radius: 8px;
     box-shadow: 0 2px 5px var(--primary-bg);
