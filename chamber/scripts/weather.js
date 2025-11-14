@@ -107,7 +107,7 @@ function displayResults(weatherData) {
 
     const desc = weatherData.weather[0].description;
     const weatherDesc = document.getElementById('weather-desc');
-    document.querySelector('#weather-desc').innerHTML = `<stong>${weatherDesc}</strong>`;
+    document.querySelector('#weather-desc').innerHTML = `<strong>${weatherDesc}</strong>`;
     if (weatherDesc) {
         weatherDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
     }
