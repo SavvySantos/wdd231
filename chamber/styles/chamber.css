@@ -317,11 +317,6 @@ footer {
     line-height: 1.5;
 }
 
-.events-list {
-    margin-bottom: 1rem;
-    line-height: 1.5;
-}
-
 /*-------Home Page - Weather--------*/
 .forecast-day-card {
     display: flex;
