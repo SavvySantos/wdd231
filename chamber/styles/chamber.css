@@ -9,18 +9,26 @@
     --primary-text: #f5f5f5;
     --secondary-bg: #87CEEB;
     --accent: #ffd700;
-    --join-btn-bg : #ff6347;
+    --join-btn-bg: #ff6347;
     --h3: #2a4d69;
 }
 
+/* ------- Header ------- */
 header {
     font-family: "Playfair", serif;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
     padding: 5px 10px;
     width: 100%;
+}
+
+header,
+footer {
+    color: var(--primary-bg);
+    background-color: var(--secondary-bg);
+    padding: 20px;
 }
 
 h1 {
@@ -131,13 +139,7 @@ h1 {
     text-decoration: underline .25rem var(--primary-text);
 }
 
-header,
-footer {
-    color: var(--primary-bg);
-    background-color: var(--secondary-bg);
-    padding: 20px;
-}
-
+/* ------- Cards (Directory) ------- */
 #cards {
     min-height: 500px;
     margin: 1rem;
@@ -212,7 +214,7 @@ footer {
     box-shadow: 0 4px 6px var(--primary-bg);
 }
 
-/*-------Home Page - Hero Image--------*/
+/* ------- Hero ------- */
 .hero {
     position: relative;
     min-width: 60vh;
@@ -265,15 +267,24 @@ footer {
     background-color: #ff4500;
 }
 
-/*-------Home Page - Sections--------*/
+/* ------- Sections ------- */
+.home-sections section,
+.spotlight,
+.spotlight-info,
+.spotlight-body,
+.weather-box .weather-info,
+.current-events,
 .home-sections section {
     display: flex;
     flex-direction: column;
+}
+
+.home-sections section {
     padding: 1rem;
     border-radius: 6px;
 }
 
-/*-------Home Page - Current Events--------*/
+/* ------- Current Events ------- */
 .current-events h2,
 .home-sections h2 {
     background-color: var(--primary-bg);
@@ -288,8 +299,6 @@ footer {
 
 .current-events {
     padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 1200px;
@@ -298,7 +307,6 @@ footer {
 }
 
 .current-events .events-card,
-.weather-box,
 #forecast {
     background-color: var(--primary-text);
     border-radius: 0 0 8px 8px;
@@ -317,7 +325,7 @@ footer {
     line-height: 1.5;
 }
 
-/*-------Home Page - Weather--------*/
+/* ------- Weather ------- */
 .forecast-day-card {
     display: flex;
     align-items: center;
@@ -331,27 +339,17 @@ footer {
     display: flex;
     gap: 1rem;
     position: relative;
-    background-color: var(--primary-text);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px var(--primary-bg);
 }
 
-.weather-box img {
+.weather-box img,
+.weather-box img#weather-icon {
     display: flex;
     flex-shrink: 0;
     width: 100px;
     height: 100px;
-}
-
-.weather-box img#weather-icon {
-    width: 100px;
-    height: 100px;
-    flex-shrink: 0;
 }
 
 .weather-box .weather-info {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
 }
 
@@ -365,26 +363,22 @@ footer {
     font-weight: bold;
 }
 
-/*-------Home Page - Companies--------*/
+/* ------- Spotlight Companies ------- */
 .spotlight-container {
     display: grid;
     gap: 2rem;
     margin: 2rem auto;
     width: 100%;
-    max-width: none;
     justify-content: center;
 }
 
 .spotlight {
     width: min(300px, 90vw);
-    height: auto;
     aspect-ratio: 1/1;
     background: var(--primary-text);
     border: 2px solid var(--primary-bg);
     border-radius: 10px;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
 }
 
 .spotlight-header {
@@ -399,8 +393,6 @@ footer {
 }
 
 .spotlight-body {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 1rem;
     flex: 0 0 auto;
@@ -414,13 +406,11 @@ footer {
 }
 
 .spotlight-info {
-    display: flex;
-    flex-direction: column;
     text-align: left;
     font-size: 1.5rem;
 }
 
-/*-------footer--------*/
+/* ------- Footer ------- */
 footer {
     margin-top: 1rem;
 }
