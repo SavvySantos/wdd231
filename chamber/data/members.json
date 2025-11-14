@@ -1,23 +1,23 @@
 {
     "members": [
     {   
-        "name": "Mateo Alvarez",
-        "address": "1428 Saguaro Lane, Cedar City, UT 84720",
+        "name": "Tacos Bravo",
+        "address": "4595 N Mule Train Dr., Enoch, UT 84721",
         "phone-number": "(435)210-9876",
         "website": "https://example.com/mateo",
-        "image": "https://picsum.photos/150/150?random=1",
+        "image": "images/tacos-logo.jpg",
         "level": "Silver"
     },
     {   
-        "name": "Lily Thompson",
-        "address": "904 Waverly Avenue, Parowan, UT 84761",
+        "name": "Santos Roofing & Construction",
+        "address": "4595 N Mule Train Dr., Enoch, UT 84721",
         "phone-number": "(435)333-4421",
         "website": "https://example.com/lily",
-        "image": "https://picsum.photos/150/150?random=2",
+        "image": "images/santos-logo.png",
         "level": "Gold"
     },
     {   
-        "name": "Jordan Kim",
+        "name": "Funtime Inflatables",
         "address": "57 Harborview Drive, Enoch, UT 84721",
         "phone-number": "(435)876-1234",
         "website": "https://example.com/jordan",
@@ -25,7 +25,7 @@
         "level": "Bronze"
     },
     {   
-        "name": "Sofia Morales",
+        "name": "Red Rock BookStore",
         "address": "2106 Elmcrest Boulevard, Cedar City, UT 84720",
         "phone-number": "(435)555-7890",
         "website": "https://example.com/sofia",
@@ -33,7 +33,7 @@
         "level": "Gold"
     },
     {   
-        "name": "Ethan Parker",
+        "name": "Ironwood Fitness",
         "address": "33 Oakridge Court, Ivins, UT 84738",
         "phone-number": "(435)908-7654",
         "website": "https://example.com/ethan",
@@ -41,7 +41,7 @@
         "level": "Silver"
     },
     {   
-        "name": "Maya Bennett",
+        "name": "Sunset Boutique",
         "address": "1182 Maple Hollow Road, Kanarraville, UT 84742",
         "phone-number": "(435)444-3210",
         "website": "https://example.com/maya",
@@ -49,7 +49,7 @@
         "level": "Bronze"
     },
     {   
-        "name": "Caleb Ruiz",
+        "name": "Pine Valley Bakery",
         "address": "765 Sunrise Terrace, Cedar City, UT 84720",
         "phone-number": "(435)678-9012",
         "website": "https://example.com/caleb",

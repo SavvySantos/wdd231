@@ -1,35 +1,36 @@
 async function loadSpotlights() {
     try {
-        const response = await fetch('./data/company.json');
+        const response = await fetch('./data/members.json');
         const data = await response.json();
 
         const members = data.members;
 
         const eligibleMembers = members.filter(member => member.level === "Gold" || member.level === "Silver");
 
-        const container = document.querySelector('.spotlights-container');
-        container.innerHTML = '';
-
-        const shuffled = companies.sort(() => 0.5 - Math.random());
+        const shuffled = eligibleMembers.sort(() => 0.5 - Math.random());
         const selected = shuffled.slice(0, 3);
+
+        const container = document.querySelector('.spotlight-container');
+        container.innerHTML = '';
 
         selected.forEach(member => {
             const article = document.createElement('article');
             article.classList.add('spotlight');
             article.innerHTML = `
-            <img src="${member.image}" alt="${member.alt}" loading="lazy">
-            <h3>${member.name}</h3>
-            <p><strong>Address: </strong>${member.address}</p>
-            <p><strong>Phone: </strong>${member["phone-number"]}</p>;
-            <p><a href="${member.website}" target="_blank"><strong>URL</strong></a></p>`;
+            <div class="spotlight-header">
+                <h3>${member.name}</h3>
+                <p class="tagline">${member.level} Member</p>
+            </div>
+            <div class="spotlight-body">
+                <img src="${member.image}" alt="${member.alt}" loading="lazy">
+                <div class="spotlight-info">
+                    <p><strong>Address: </strong>${member.address}</p>
+                    <p><strong>Phone: </strong>${member["phone-number"]}</p>
+                    <p><strong>URL: </strong><a href="${member.website}" target="_blank">${member.website}</a></p>
+                </div>
+            </div>`;
             container.appendChild(article);
         });
-
-        if (!document.querySelector('.spotlights-container h2')) {
-            const heading = document.createElement ('h2');
-            heading.textContent = 'Company Spotlights';
-            container.before(heading);
-    }
     }
     catch (error) {
         console.error('Error loading company spotlights:', error);
