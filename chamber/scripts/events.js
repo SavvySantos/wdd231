@@ -6,15 +6,18 @@ async function loadEvents() {
 
 function displayEvents(events) {
     const eventsContainer = document.querySelector('.current-events');
-    eventsContainer.innerHTML = '<h2>Current Events</h2>';
+    eventsContainer.innerHTML = `<h2>Current Events</h2>
+    <article class="events-card">
+        <ul class="events-list"></ul>
+    </article>`;
+
+    const list = eventsContainer.querySelector('.events-list');
 
     events.forEach(event => {
-        const article = document.createElement('article');
-        article.innerHTML = `
-            <h3>${event.name}</h3>
-            <p><strong>${event.date}</strong></p>
-            <p>${event.description}</p>`;
-        eventsContainer.appendChild(article);
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <strong>${event.name}</strong> - ${event.date}<br>${event.description}`;
+        list.appendChild(li);
     });
 }
 

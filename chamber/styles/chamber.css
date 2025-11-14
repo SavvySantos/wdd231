@@ -134,7 +134,7 @@ h1 {
 header,
 footer {
     color: var(--primary-bg);
-    background-color: var(--primary-text);
+    background-color: var(--secondary-bg);
     padding: 20px;
 }
 
@@ -215,8 +215,8 @@ footer {
 /*-------Home Page - Hero Image--------*/
 .hero {
     position: relative;
-    min-width: 100%;
-    max-height: 600px;
+    min-width: 60vh;
+    max-height: 800px;
     background-image: url('./images/cedar-hero.jpg');
     background-size: cover;
     background-position: center center;
@@ -265,41 +265,115 @@ footer {
     background-color: #ff4500;
 }
 
+/*-------Home Page - Sections--------*/
+.home-sections section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
 /*-------Home Page - Current Events--------*/
+.current-events h2,
+.home-sections h2 {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 2rem;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0;
+}
+
 .current-events {
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 0;
 }
 
-.current-events article {
+.current-events .events-card,
+.weather-box,
+#forecast {
     background-color: var(--primary-text);
-    border-radius: 8px;
-    margin: 1rem 0;
+    border-radius: 0 0 8px 8px;
+    margin-top: 0;
     padding: 1rem;
     box-shadow: 0 2px 5px var(--primary-bg);
-
     width: 100%;
     max-width: 10000px;
 }
 
-.current-events h3 {
-    color: var(--h3);
-    margin-bottom: 0.5rem;
+.events-list {
+    list-style: disc;
+    padding-left: 2rem;
+    color: var(--primary-bg);
+}
+
+.events-list {
+    margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
 /*-------Home Page - Weather--------*/
+.forecast-day-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--primary-bg);
+}
 
+.weather-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    align-items: flex-start;
+    background-color: var(--primary-text);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--primary-bg);
+}
+
+.weather-box img {
+    display: flex;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.weather-box img#weather-icon {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.weather-box .weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: 1rem;
+}
+
+.weather-box .weather-info p {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+}
+
+.weather-box #current-temp {
+    font-size: 2rem;
+    font-weight: bold;
+}
 
 /*-------Home Page - Companies--------*/
 .company-spotlights {
-    padding: 2rem 1rem;
-    background-color: var(--primary-text);
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,8 +391,10 @@ footer {
 .company-spotlights .spotlight {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    box-shadow: 0 2px 5px var(--primary-bg);
     gap: 1.5rem;
     margin-bottom: 2rem;
     background-color: var(--primary-text);
@@ -354,10 +430,13 @@ footer {
 .current-events {
     max-width: 1700px;
     align-items: center;
-    gap: 2rem;
 }
 
 /*-------footer--------*/
+footer {
+    margin-top: 1rem;
+}
+
 .footer-container {
     display: flex;
     justify-content: space-evenly;

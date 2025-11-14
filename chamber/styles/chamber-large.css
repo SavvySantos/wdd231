@@ -29,19 +29,58 @@
         width: 100%;
     }
 
-    .company-spotlights .spotlight {
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-        gap: 1.5rem;
+    .home-sections,
+    .spotlights-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.25rem;
+    align-items: stretch;
+    margin-top: 2rem;
+    }
+
+    .home-sections section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 6px;
+        height: 100%;
+    }
+
+    .current-events {
+        grid-column: 1/2;
+        padding: 2rem;
+    }
+
+    .current-weather {
+        grid-column: 2/3;
+    }
+
+    .weather-forecast {
+        grid-column: 3/4;
+    }
+
+    .current-events .events-card,
+    .current-weather .weather-box,
+    .weather-forecast #forecast {
+        flex: 1;
+    }
+
+    .company-spotlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: stretch;
+        justify-content: center;
     }
 
     .company-spotlights .spotlight img {
         width: 300px;
-        margin-bottom: 0;
     }
 
     .company-spotlights .spotlight {
-        flex: 1;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        max-width: 350px;
     }
 }

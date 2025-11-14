@@ -50,18 +50,36 @@
                 <p><a href="#" class="join-us">Join</a> us today!</p>
             </div>
         </section>
-        <section class="current-events">
-            <h2>Current Events</h2>
+
+        <section class="home-sections">
+            <section class="current-events">
+                <h2>Current Events</h2>
+            </section>
+            <section class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-box">
+                        <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" width="100" height="100" loading="lazy">
+                    <div class="weather-info">
+                        <p class="current-temp"></p>
+                        <p id="weather-desc"></p>
+                        <p>High: <span id="high-temp"></span></p>
+                        <p>Low: <span id="low-temp"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Sunrise: <span id="sunrise"></span></p>
+                        <p>Sunset: <span id="sunset"></span></p>
+                    </div>
+                </div>
+            </section>
+            <section class="weather-forecast">
+                <h2>3-Day Forecast</h2>
+                <div id="forecast"></div>
+            </section>
         </section>
-        <p>The current temperature in Cedar City, UT is <span id="current-temp"></span></p>
-        <figure>
-            <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" width="100" height="100" loading="lazy">
-            <figcaption></figcaption>
-        </figure>
         <section class="company-spotlights">
-            <h2>Company Spotlights</h2>
+            <div class="spotlights-container"></div>
         </section>
     </main>
+
     <footer>
         <div class="footer-container">
             <div class="chamber-info">
