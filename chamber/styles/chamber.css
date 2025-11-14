@@ -358,7 +358,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    text-align: 1rem;
 }
 
 .weather-box .weather-info p {
