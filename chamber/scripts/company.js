@@ -25,11 +25,15 @@ async function loadSpotlights() {
             container.appendChild(article);
         });
 
-        const heading = document.createElement('h2');
-        heading.textContent = 'Company Spotlights';
-        container.before(heading);
+        if (!document.querySelector('.spotlights-container h2')) {
+            const heading = document.createElement ('h2');
+            heading.textContent = 'Company Spotlights';
+            container.before(heading);
+    }
+    }
+    catch (error) {
+        console.error('Error loading company spotlights:', error);
     }
 }
-document.addEventListener('DOMContentLoaded', loadSpotlights);
 
 document.addEventListener('DOMContentLoaded', loadSpotlights);
