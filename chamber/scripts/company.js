@@ -24,15 +24,5 @@ async function loadSpotlights() {
     container.before(heading);
 }
 document.addEventListener('DOMContentLoaded', loadSpotlights);
-    companies.forEach(company => {
-        const article = document.createElement('article');
-        article.classList.add('spotlight');
-        article.innerHTML = `
-            <img src ="${company.image}" alt="${company.alt}" loading="lazy">
-            <h3>${company.company}</h3>
-            <p>${company.description}</p>
-            <p><strong>Specialty:</strong> ${company.specialty}</p>`;
-        container.appendChild(article);
-    });
 
 document.addEventListener('DOMContentLoaded', loadSpotlights);
