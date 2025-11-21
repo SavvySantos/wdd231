@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Join Page | WDD 231 - Web Frontend Development I | Savanah Santos</title>
+    <meta name="description" content="This page is the join page for the chamber of commerce assignment done in 2025 by Savanah Santos for her WDD 231 - Web Frontend Development I class.">
+    <meta name="author" content="Savanah Santos">
+
+    <meta property="og:title" content="Welcome to the Chamber of Commerce Join Us page">
+    <meta property="og:description" content="Welcome to our Chamber of Commerce join us page! Come join us as we explore important events, and resources that support members, foster connections, and strengthen our community.">
+    <meta property="og:url" content="https://savvysantos.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://savvysantos.github.io/wdd231/chamber/images/cedar-hero.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wdth,wght@0,5..1200,112.5,300..900;1,5..1200,112.5,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="icon" href="chamber-favicon.ico">
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/company.js" defer></script>
+    <script src="scripts/membership-level.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.png" alt="chamber" width="95" height="95" loading="lazy">
+            <span><strong>Cedar City Chamber of Commerce</strong></span>
+        </div>
+        <button id="ham-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="current">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-layout">
+            <form method="get" action="thankyou.html" class="conf">
+                <fieldset>
+                    <legend>Member Information</legend>
+                    <label for="first">First name:*
+                        <input type="text" id="first" name="first" autocomplete="given-name" required title="Enter your first name: "></label>
+                    <label for="last">Last name:*
+                        <input type="text" id="last" name="last" autocomplete="family-name" required title="Enter your last name: "></label>
+                    <label for="organization">Organizational Title:*  
+                        <input type="text" id="orgTitle" name="orgTitle" title="Enter your Organizational title: " autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$" required></label>
+                    <label for="email">Email:*  
+                        <input type="email" id="email" name="email" autocomplete="email" title="Enter your email: " placeholder="someone123@gmail.com" required></label>
+                    <label for="number">Phone Number:*  
+                        <input type="tel" id="number" name="number" autocomplete="tel" title="Enter your phone number: " required></label>
+                    <label for="businessName">Business/Organization's Name:*  
+                        <input type="text" id="businessName" name="businessName" title="Enter your business/organization's name: " autocomplete="organization" required></label>
+                    <label for="memberLevel">Please select your membership level:* 
+                    <select id="memberLevel" name="memberLevel" required>
+                        <option value="" disabled selected>Choose a Membership Level:* </option>
+                        <option value="np">NP Membership is for non profit organizations and there is no fee</option>
+                        <option value="bronze">Bronze Membership</option> 
+                        <option value="silver">Silver Membership</option> 
+                        <option value="gold">Gold Membership</option> 
+                    </select></label>
+                    <label for="description">Business Description:*  
+                    <textarea id="description" name="description" title="description" rows="5" required></textarea></label>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </fieldset>
+                <input type="submit" value="Join Chamber Now!">
+            </form>
+            <div class="level-buttons"></div>
+            <dialog id="level-details"></dialog>
+        </div>
+        </main>
+    <footer>
+        <div class="footer-container">
+            <div class="chamber-info">
+                <p>Cedar City Chamber of Commerce</p>
+                <p>123 Main Street, Cedar City, UT 84720</p>
+                <p>(435)123-4567</p>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="Linkedin" width="45" height="45" loading="lazy"></a>
+                <a href="https://github.com/"><img src="images/github.svg" alt="Github" width="45" height="45" loading="lazy"></a>
+                <a href="https://www.facebook.com/savanah.bryant"><img src="images/facebook.svg" alt="Facebook" width="45" height="45" loading="lazy"></a>
+                <a href="https://www.instagram.com/savanahbryant50/"><img src="images/instagram.svg" alt="Instagram" width="45" height="45" loading="lazy"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy;<span id="currentyear"></span>💕Savanah Santos💕 Utah USA</p>
+                <p class="modified">Last modified: <span id="lastmodified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>

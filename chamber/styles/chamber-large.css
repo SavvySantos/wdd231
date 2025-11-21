@@ -119,4 +119,20 @@
         flex-direction: column;
         text-align: center;
     }
+
+    .main-layout {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .conf fieldset {
+        max-width: 100%;
+    }
+
+
+    .member-card {
+        min-width: 300px;
+    }
 }
