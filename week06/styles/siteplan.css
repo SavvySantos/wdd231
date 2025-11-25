@@ -1,0 +1,79 @@
+* {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS HEX */
+:root {
+--white: #FDFEff;
+--accent-background: #FBDE53ff;
+--primary-background: #CE412Dff;
+--card-background: #BF4834ff;
+--highlight: #F25259ff;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+header,
+footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--primary-background);
+    color: var(--smokey);
+}
+
+.body-text {
+    margin: 5rem;
+}
+
+.body-text p {
+    margin: 1rem;
+}
+
+h1 {
+    margin: 1rem;
+    font-family: "Almendra Display", serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+/* BODY SECTIONS */
+section {
+    margin: 3rem 0;
+}
+
+/* COLOR SCHEMA SECTION */
+.color-link {
+    color: var(--highlight);
+    font-size: 1.20rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: var(--accent-background);
+    padding: 1rem;
+    max-width: 132px;
+}
+
+a {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+
+
