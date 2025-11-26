@@ -23,6 +23,7 @@ async function loadPlaces() {
 
             img.src = place.img;
             img.alt = place.title;
+            img.loading = "lazy";
 
             const parts = place.address.split(",");
             address.innerHTML = `${parts[0]}<br>${parts[1]},${parts[2]}`;
