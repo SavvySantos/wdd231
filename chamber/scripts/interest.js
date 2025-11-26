@@ -1,3 +1,5 @@
+import { places } from "../data/discover.mjs";
+
 document.addEventListener("DOMContentLoaded", () => {
 
     loadPlaces();
@@ -5,9 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function loadPlaces() {
     try {
-        const response = await fetch('data/discover.json');
-        const places = await response.json();
-
         const cardArea = document.querySelector('#interest-cards');
 
         places.forEach(place => {
@@ -15,25 +14,33 @@ async function loadPlaces() {
             card.classList.add('interest-card');
 
             const name = document.createElement('h2');
+            const figure = document.createElement('figure');
             const img = document.createElement('img');
-            const address = document.createElement('p');
+            const address = document.createElement('address');
             const description = document.createElement('p');
+            const button = document.createElement('a');
 
             name.textContent = place.title;
 
             img.src = place.img;
             img.alt = place.title;
             img.loading = "lazy";
+            figure.appendChild(img);
 
             const parts = place.address.split(",");
             address.innerHTML = `${parts[0]}<br>${parts[1]},${parts[2]}`;
 
             description.textContent = place.description;
 
-            card.appendChild(img);
+            button.textContent = "Learn More";
+            button.href = place.link;
+            button.classList.add("learn-btn");
+
             card.appendChild(name);
+            card.appendChild(figure);
             card.appendChild(address);
             card.appendChild(description);
+            card.appendChild(button);
 
             cardArea.appendChild(card);
         });

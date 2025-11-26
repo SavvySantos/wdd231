@@ -1,0 +1,15 @@
+@media screen and (min-width: 38rem) {
+    
+    .interest-card {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas: 
+            "image name"
+            "image address"
+            "image description"
+            "image learn";
+            column-gap: .25rem;
+            align-items: start;
+            padding: 1rem;
+}
+
+}

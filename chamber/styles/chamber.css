@@ -17,6 +17,7 @@
 7. THANK YOU PAGE
 8. FOOTER
 9. DISCOVER PAGE
+10. DISCOVER PAGE (Learn More Buttons)
 *******************************************/
 
 
@@ -297,7 +298,8 @@ footer {
     left: 50%;
 }
 
-.hero-text .join-us {
+.hero-text .join-us,
+.learn-btn {
     background-color: var(--join-btn-bg);
     color: var(--primary-bg);
     padding: 0.75rem 1.5rem;
@@ -307,7 +309,8 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.hero-text .join-us:hover {
+.hero-text .join-us:hover,
+.learn-btn:hover {
     background-color: #ff4500;
 }
 
@@ -832,34 +835,98 @@ footer {
 *******************************************/
 #interest-cards {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1.5rem;
-    margin: 0 auto;
-    max-width: 1100px;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.interest-card address {
+    margin: 1rem auto;
+    grid-area: address;
+}
+
+.interest-card h2 {
+    grid-area: name;
+}
+
+.interest-card figure {
+    grid-area: image;
+    border-radius: 1rem;
+}
+
+.interest-card p {
+    margin: 1rem;
+    grid-area: description;
+}
+
+.interest-card .learn-btn {
+    grid-area: learn;
+    justify-self: center;
 }
 
 .interest-card {
+    display: grid;
+    grid-template-areas: 
+        "name"
+        "image"
+        "address"
+        "description"
+        "learn";
     background-color: var(--secondary-bg);
     border: 3px solid var(--primary-bg);
     border-radius: 1rem;
-    padding: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: .25rem;
+    padding: .25rem;
 }
 
 .interest-card img {
-    width: 100%;
-    max-width: 300px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     object-fit: cover;
     border-radius: .75rem;
     border: 2px solid var(--primary-bg);
 }
 
+.interest-card h2 {
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
 h2 {
     font-family: "Open-Sans", sans-serif;
+}
+
+/*******************************************
+* 10. DISCOVER PAGE (Learn More Buttons)
+*******************************************/
+.learn-btn {
+    text-decoration: none;
+    font-family: "Open-Sans", sans-serif;
+    color: var(--primary-bg);
+    border: solid .25rem;
+    padding: 1rem;
+    background-color: var(--join-btn-bg);
+    display: inline-block;
+    text-align: center;
+    border-radius: .5rem;
+    min-width: 150px;
+    height: auto;
+}
+
+.visit-message {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+    
 }

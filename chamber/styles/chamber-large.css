@@ -1,4 +1,4 @@
-@media (min-width: 60em) {
+@media (min-width: 64rem) {
     :root {
     --primary-bg: #000000;
     --primary-text: #f5f5f5;
@@ -151,6 +151,8 @@
     }
 
     #interest-cards{
-        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
     }
 }
