@@ -133,6 +133,24 @@
 
 
     .member-card {
-        min-width: 300px;
+        max-width: 300px;
+    }
+
+    #cards {
+        margin: 1rem auto;
+        max-width: 95%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #cards.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    #interest-cards{
+        grid-template-columns: repeat(3, 1fr);
     }
 }

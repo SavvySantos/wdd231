@@ -1,0 +1,52 @@
+[
+    {       
+        "title": "Delicate Arch",
+        "img": "images/arch.webp",
+        "description": "A striking natural sandstone arch nestled in the red-rock desert, offering scenic views, short hikes, and great photo opportunities for visitors exploring southern Utah's unique landscapes.",
+        "address": "123 Desert Arch Rd, Cedar City, Ut 84721"
+    },
+    {       
+        "title": "Brian Head Resort",
+        "img": "images/brian-head-resort.webp",
+        "description": "A year-round mountain resort known for skiing, snowboarding, moutain biking, and high-elevation scenic views among the alpine forests.",
+        "address": "3290 Snow Ridge Way, Brian Head, Ut 84719"
+    },
+    {       
+        "title": "Snowy Cedar Overlook",
+        "img": "images/snowy-cedar.webp",
+        "description": "A peaceful winter viewpoint overlooking Utah's snow-covered landscapes, perfect for photos, quiet walks, and scenic relaxation.",
+        "address": "980 Winter Ridge Trail, Cedar City, Ut 84721"
+    },
+    {       
+        "title": "Art Photo Studio",
+        "img": "images/art.webp",
+        "description": "A creative local photography space featuring portrait sessions, exhibits, and artistic showcasses from Cedar City Photographers.",
+        "address": "214 Canvas Lane, Cedar City, Ut 84720"
+    },
+    {       
+        "title": "The Utah Midsummer Renaissance Faire",
+        "img": "images/faire-logo.webp",
+        "description": "A lively annual festival celebrating medieval culture with artisan vendors, free live entertainment, costumes, food booths, and family activities.",
+        "address": "200 N Main St., Cedar City, Ut 84721"
+    },
+    {       
+        "title": "Frontier Homestead Museum",
+        "img": "images/frontierhomestead.webp",
+        "description": "A museum showcasing Pioneer life with historic buildings, artifacts, hands-on exhibits, and stories of early Iron County settlers.",
+        "address": "750 Pioneer Heritage Road, Cedar City, Ut 84720"
+    },
+    {       
+        "title": "Historic Downtown Cedar City",
+        "img": "images/historic-downtown.webp",
+        "description": "A charming district filled with local shops, cafes, murals, and restored historic buildings that reflect Cedar City's small-town heritage.",
+        "address": "145 W Main Street, Cedar City, UT 84720"
+
+    },
+    {       
+        "title": "Cedar Breaks",
+        "img": "images/cedar-breaks.webp",
+        "description": "A stunning natural amphitheater carved from colorful cliffs, offering hiking trails, scenic overlooks, and breathtaking high-elevation views.",
+        "address": "1000 Rimview Overlook Road, Brian Head, UT 84719"
+
+    }
+    ]
