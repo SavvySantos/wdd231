@@ -150,9 +150,28 @@
     grid-template-columns: repeat(3, 1fr);
     }
 
-    #interest-cards{
+        #interest-cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        
+    }
+
+    .interest-card {
+        display: grid;
+        grid-template-columns: 250px 1fr 1fr;
+        grid-template-areas: 
+            "image name name"
+            "image address description"
+            "image learn learn";
+        column-gap: .25rem;
+        align-items: start;
+        padding: 1rem;
+    }
+
+    .interest-card img {
+        transition: 0.3s ease;
+    }
+
+    .interest-card img:hover {
+        filter: brightness(1.3);
     }
 }
