@@ -846,10 +846,6 @@ footer {
     grid-area: address;
 }
 
-.interest-card h2 {
-    grid-area: name;
-}
-
 .interest-card figure {
     grid-area: image;
     border-radius: 1rem;
@@ -890,6 +886,7 @@ footer {
 }
 
 .interest-card h2 {
+    grid-area: name;
     min-height: 3.5rem;
     display: flex;
     align-items: center;
