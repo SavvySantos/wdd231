@@ -882,7 +882,7 @@ footer {
 }
 
 .interest-card img {
-    width: 300px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: .75rem;
