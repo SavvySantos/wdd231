@@ -93,12 +93,13 @@ header {
     text-align: center;
     align-items: center;
     width: 100%;
+    gap: 1rem;
 }
 
 .navigation a {
     text-decoration: none;
     color: black;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: 2rem;
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     padding: 1rem;
@@ -177,7 +178,7 @@ footer {
 h1 {
     margin: clamp(1rem, 4vw, 3.5rem);
     font-family: "Almendra Display", serif;
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -222,7 +223,7 @@ h1 {
 }
 
 .about-us {
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: 1rem;
     line-height: 1.5;
 }
 
