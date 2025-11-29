@@ -1,0 +1,298 @@
+/*******************************************
+        Table of Contents
+********************************************
+1. RESET & ROOT VARIABLES
+2. HEADER & NAVIGATION
+3. CARD STYLES (Home Page)
+4. HOME PAGE
+    4.1 Hero Section
+    4.2 Home Sections
+        4.2.a Monthly Events
+        4.2.b Weather
+5. MENU PAGE
+6. CONTACT US PAGE
+    5.1 Layout
+    5.2 Form
+7. DIALOG (Modal)
+8. THANK YOU PAGE
+9. FOOTER
+*******************************************/
+
+
+/*******************************************
+* 1. RESET & ROOT VARIABLES
+*******************************************/
+* {
+    font-family: "Work Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+--white: #FDFEff;
+--accent-background: #FBDE53ff;
+--primary-background: #CE412Dff;
+--card-background: #BF4834ff;
+--highlight: #F25259ff;
+}
+
+/*******************************************
+* 2. HEADER & NAVIGATION
+*******************************************/
+body {
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 2rem .3rem 2rem;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.logo img {
+    max-height: 250px;
+    width: auto;
+    transform: scale(1.5);
+}
+
+#ham-button {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ham-button,
+.hamburger {
+    flex-shrink: 0;
+}
+
+
+
+.navigation ul {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.navigation.open ul {
+    display: flex;
+}
+
+.hamburger {
+    width: 40px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+    content: "\2630";
+    color: black;
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.hamburger.open::before {
+    content: "\00D7";
+    color: var(--accent-background);
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.navigation a.current {
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.navigation a:hover {
+    text-decoration: underline .25rem var(--accent-background);
+}
+
+header,
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--primary-background);
+    color: rgb(74, 72, 72);
+}
+
+/*******************************************
+* 4. HOME PAGE
+*******************************************/
+
+/* 4.1 Hero Section */
+h1 {
+    margin: clamp(1rem, 5vw, 4rem);
+    font-family: "Almendra Display", serif;
+    font-size: clamp(2rem, 5vw, 5rem);
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('images/tacos-hero.jpg');
+    max-height: 400px;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-container {
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.about-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: clamp(80%, 60vw, 800px);
+    max-width: 800px;
+    background-color: rgba(225, 225, 225, 0.60);
+    padding: clamp(1rem, 2vw, 2.5rem);
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.about-us {
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1.5;
+}
+
+/* 4.2 Home Section */
+
+    /* 4.2.a Monthly Events */
+
+
+    /* 4.2.b Weather */
+    .weather-box,
+    #forecast {
+        background-color: lightgray;
+        border-radius: 0 0 8px 8px;
+        margin-top: 0;
+        padding: 1rem;
+        box-shadow: 0 2px 5px var(--primary-background);
+        width: 100%;
+        max-width: 10000px;
+    }
+
+    .forecast-day-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid var(--primary-background);
+    }
+
+    .weather-box {
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+        gap: 1rem;
+        position: relative;
+        border-radius: 8px;
+    }
+
+    .weather-box img {
+        display: flex;
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .weather-box img#weather-icon {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+
+    .weather-box .weather-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .weather-box .weather-info p {
+        margin: 0.25rem 0;
+        font-size: 1rem;
+    }
+
+    .weather-box #current-temp {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+
+

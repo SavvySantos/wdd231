@@ -1,0 +1,41 @@
+@media screen and (min-width: 48rem) {
+
+
+    * {
+        font-family: "Work Sans", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+    --white: #FDFEff;
+    --accent-background: #FBDE53ff;
+    --primary-background: #CE412Dff;
+    --card-background: #BF4834ff;
+    --highlight: #F25259ff;
+    }
+
+    #ham-button {
+        display: none;
+    }
+
+    .navigation {
+        flex: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navigation a:hover {
+        text-decoration: none;
+        border: solid .25rem var(--accent-background);
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}

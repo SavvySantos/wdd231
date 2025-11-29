@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos Bravo | Home</title>
+    <meta name="description" content="This page was originally created in 2025 by Savanah Santos as her final project in her WDD231 Web Frontend Development I course. The page is for her business, Tacos Bravo.">
+    <meta name="author" content="Savanah Santos">
+    <meta property="og:title" content="Home Page">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-medium.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/tacos-bravo-transparent.webp" alt="Tacos Bravo Logo" width="350" height="350" loading="lazy">
+        </div>
+        <button id="ham-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="final/menu.html">Menu</a></li>
+                <li><a href="final/content-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="page-title">Tacos Bravo</h1>
+        <div class="hero-container">
+        <section class="hero">
+            <img src="images/tacos-hero-1.jpg" alt="hero" class="hero-image">
+            <div class="about-overlay">
+                <p class="about-us">
+                    At Tacos Bravo, we believe great food brings people together. What started as a simple love for bold flavors and fresh ingredients has grown into a place where our community knows they can always find delicious, authentic tacos made with care. We're passionate about serving food that feels like home--warm, flavorful, and crafted with pride. Whether you're grabbing a quick bite or sharing a meal with friends and family, Tacos Bravo is here to bring you quality, flavor, and a little bit of joy in every bite.
+                </p>
+            </div>
+            </div>
+            </section>
+            <section class="home-sections">
+                <section class="monthly-events">
+                    <h2>Our months events!<h2>                    
+                </section>
+                <section class="current-weather">
+                    <h2>Weather Forcast</h2>
+                    <div class="weather-box">
+                        <h3>Current Weather | Cedar City, Utah</h3>
+                        <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" width="100" height="100" loading="lazy">
+                        <div class="weather-info">
+                            <p class="current-temp">Current Temperature: </p>
+                            <p id="weather-desc"></p>
+                            <p>High: <span id="high-temp"></span></p>
+                            <p>Low: <span id="low-temp"></span></p>
+                            <p>Humidity: <span id="humidity"></span></p>
+                            <p>Sunrise: <span id="sunrise"></span></p>
+                            <p>Sunset: <span id="sunset"></span></p>
+                            <section id="weather-forecast">
+                                <div id="forecast">
+                                    <h3>7-Day Weather Forecast</h3>
+                                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" width="100" height="100" loading="lazy">
+                                    <div id="forecast"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="chamber-info">
+                <p>Cedar City Chamber of Commerce</p>
+                <p>123 Main Street, Cedar City, UT 84720</p>
+                <p>(435)123-4567</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/savanah.bryant"><img src="images/facebook.svg" alt="Facebook" width="45" height="45" loading="lazy"></a>
+                <a href="https://www.instagram.com/savanahbryant50/"><img src="images/instagram.svg" alt="Instagram" width="45" height="45" loading="lazy"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy;<span id="currentyear"></span>💕Savanah Santos💕 Utah USA</p>
+                <p class="modified">Last modified: <span id="lastmodified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
