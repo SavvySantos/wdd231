@@ -4,7 +4,7 @@ const captionDesc = document.querySelector('figcaption');
 const apiKey = 'f4c1915698f7a44832469253ffc6027a';
 const lat = 37.68;
 const lon = -113.06;
-const forecastDiv = document.getElementById('forecast');
+const forecastDiv = document.getElementById('forecast-container');
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=37.68&lon=-113.06&units=imperial&appid=f4c1915698f7a44832469253ffc6027a';
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=37.68&lon=-113.06&units=imperial&appid=f4c1915698f7a44832469253ffc6027a'
 
