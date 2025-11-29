@@ -80,6 +80,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
 #ham-button,
@@ -97,6 +98,7 @@ header {
     align-items: center;
     width: 100%;
     gap: 1rem;
+    z-index: 5;
 }
 
 .navigation a {
@@ -111,6 +113,8 @@ header {
 
 .navigation.open ul {
     display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .hamburger {
