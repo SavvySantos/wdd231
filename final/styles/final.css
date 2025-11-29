@@ -50,9 +50,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    padding: 0 2rem;
-    position: relative;
     background-color: var(--primary-background);
 }
 
@@ -107,7 +104,6 @@ header {
     font-size: 2rem;
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
-    padding: 1rem;
     border-radius: 1rem;
 }
 
@@ -172,7 +168,6 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
     background-color: var(--primary-background);
     color: rgb(74, 72, 72);
 }
