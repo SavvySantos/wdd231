@@ -50,8 +50,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: .5rem 2rem .3rem 2rem;
+    height: 250px;
+    padding: 0 2rem;
     position: relative;
+    background-color: var(--primary-background);
 }
 
 .logo {
@@ -61,9 +63,10 @@ header {
 }
 
 .logo img {
-    max-height: 250px;
+    max-height: 350px;
+    height: 100%;
     width: auto;
-    transform: scale(1.5);
+    display: block;    
 }
 
 #ham-button {
@@ -176,7 +179,7 @@ footer {
 
 /* 4.1 Hero Section */
 h1 {
-    margin: clamp(1rem, 4vw, 3.5rem);
+    margin: 1em;
     font-family: "Almendra Display", serif;
     font-size: 2rem;
     text-align: center;
