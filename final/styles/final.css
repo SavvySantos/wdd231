@@ -182,7 +182,10 @@ h1 {
 }
 
 .hero {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: auto;
     background-image: url('images/tacos-hero.jpg');
@@ -191,10 +194,7 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 .hero-container {
@@ -211,11 +211,9 @@ h1 {
 }
 
 .about-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: clamp(80%, 60vw, 800px);
+    position: relative;
+    transform: none;
+    width: 90%;
     max-width: 800px;
     background-color: rgba(225, 225, 225, 0.60);
     padding: clamp(1rem, 2vw, 2.5rem);
@@ -262,6 +260,7 @@ h1 {
         gap: 1rem;
         position: relative;
         border-radius: 8px;
+        box-shadow: 0 2px 5px var(--accent-background);
     }
 
     .weather-box img {
