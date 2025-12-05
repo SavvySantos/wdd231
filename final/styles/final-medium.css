@@ -1,6 +1,4 @@
 @media screen and (min-width: 48rem) {
-
-
     * {
         font-family: "Work Sans", sans-serif;
         box-sizing: border-box;
@@ -15,27 +13,34 @@
     --card-background: #BF4834ff;
     --highlight: #F25259ff;
     }
+    
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav.navigation {
+        order: 2;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
 
     #ham-button {
         display: none;
     }
 
-    .navigation {
-        flex: 1;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .navigation a:hover {
-        text-decoration: none;
-        border: solid .25rem var(--accent-background);
-    }
-
     .navigation ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
         width: 100%;
     }
 
+    .events {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

@@ -1,7 +1,6 @@
 import { places } from "../data/discover.mjs";
 
 document.addEventListener("DOMContentLoaded", () => {
-
     loadPlaces();
 });
 

@@ -41,13 +41,24 @@
 * 2. HEADER & NAVIGATION
 *******************************************/
 body {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
     background-color: var(--white);
+    width: 100%;
+    background-color: whitesmoke;
+
+}
+
+main {
+    padding: 1rem;
+
 }
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: var(--primary-background);
@@ -56,14 +67,14 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    min-width: 0;
 }
 
 .logo img {
     max-height: 350px;
     height: 100%;
     width: auto;
-    display: block;    
+    display: block;
+    
 }
 
 #ham-button {
@@ -77,15 +88,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
 }
 
 #ham-button,
 .hamburger {
     flex-shrink: 0;
 }
-
-
 
 .navigation ul {
     list-style-type: none;
@@ -100,7 +108,7 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     font-size: 2rem;
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
@@ -154,7 +162,7 @@ header {
 }
 
 .navigation a.current {
-    color: black;
+    color: whitesmoke;
     font-weight: 700;
     text-decoration: underline;
 }
@@ -169,7 +177,7 @@ footer {
     flex-direction: row;
     align-items: center;
     background-color: var(--primary-background);
-    color: rgb(74, 72, 72);
+    color: whitesmoke;
 }
 
 /*******************************************
@@ -178,94 +186,272 @@ footer {
 
 /* 4.1 Hero Section */
 h1 {
-    margin: 1em;
     font-family: "Almendra Display", serif;
-    font-size: 2rem;
+    font-size: 5rem;
     text-align: center;
 }
 
 .hero {
+    position: relative;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     width: 100%;
+    min-height: 120px;
     height: auto;
-    background-image: url('images/tacos-hero.jpg');
-    max-height: 400px;
-    min-height: 300px;
+    background-image: url("images/tacos-hero.jpg");
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-bottom: 1rem;
 }
 
 .hero-container {
-    padding: 0 1rem;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    display: block;
 }
 
 .about-overlay {
-    position: relative;
-    transform: none;
-    width: 90%;
-    max-width: 800px;
+    position: absolute;
+    max-width: 85%;
     background-color: rgba(225, 225, 225, 0.60);
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     text-align: center;
 }
 
 .about-us {
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     line-height: 1.5;
 }
 
+.hero-image {
+    width: 100%;
+    height: 650px;
+    display: block;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
 /* 4.2 Home Section */
+.home-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.monthly-events,
+.current-weather-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
     /* 4.2.a Monthly Events */
+    h2,
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem;
+    }
 
+    .events,
+    .locations {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .event-card,
+    .location-cards {
+        background-color: var(--card-background);
+        border: .50rem solid var(--accent-background);
+        padding: 1.5rem;
+        max-width: 1100px;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        text-align: center;
+        color: whitesmoke;
+        font-family: "Work Sans", sans-serif;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        animation: fadeInUp .8s ease forwards;
+    }
+
+    .event-card:nth-child(2) {
+        animation-delay: 0.15s;
+    }
+
+    .event-card:nth-child(3) {
+        animation-delay: 0.30s;
+    }
+
+    .event-card:nth-child(4) {
+        animation-delay: 0.45s;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px)
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .member-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    }
+
+    .event-card h3 {
+        font-size: 1.6rem;
+        margin-bottom: .25rem;
+        color: #ffffff;
+    }
+
+    .event-card .date {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .event-card button {
+        padding: .5rem 1rem;
+        border: none;
+        border-radius: .5rem;
+        background-color: var(--white);
+        color: #7A0F00;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .event-card button:hover {
+        opacity: 0.8;
+    }
+
+    .event-card ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+        text-align: left;
+        color: whitesmoke;
+    }
+
+    .event-card li {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    dialog {
+        border: 1px solid rgb(0 0 0 / 10%);
+        border-radius: 2rem;
+        padding: 3rem;
+        margin: auto;
+        background: var(--white);
+        box-shadow: 0 0 3rem #777;
+        max-width: 600px;
+    }
+
+    dialog h2 {
+        font-size: 2rem;
+        text-decoration: underline;
+        margin-bottom: 1rem;
+    }
+
+    dialog h2,
+    dialog p.event-date,
+    dialog p.evnet-location,
+    dialog p.event-description {
+        text-decoration: underline;
+    }
+
+    dialog p.description {
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    dialog p {
+        margin: 0 0;
+    }
+
+    dialog p.event-date,
+    dialog p.event-description {
+        margin: 1rem 0 0;
+    }
+
+    ::backdrop {
+        background-color: rgb(0 0 0 / 50%);
+    }
+
+    dialog button {
+        position: absolute;
+        top: 23px;
+        right: 23px;
+        padding: .5rem 1rem;
+        border: 1px solid rgb(0 0 0 / 10%);
+    }
 
     /* 4.2.b Weather */
-    .weather-box,
-    #forecast {
+    .current-weather-container h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .current-weather-container h3 {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        text-decoration: underline;
+        font-weight: 900;
+    }
+
+    .weather-card,
+    .events-card {
         background-color: lightgray;
-        border-radius: 0 0 8px 8px;
-        margin-top: 0;
+        border-radius: 12px;
         padding: 1rem;
         box-shadow: 0 2px 5px var(--primary-background);
         width: 100%;
-        max-width: 400px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #forecast {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        flex-wrap: nowrap;
     }
 
     .forecast-day-card {
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
         gap: 1rem;
-        padding: 0.75rem 1rem;
-        border-bottom: 1px solid var(--primary-background);
+        padding: 1rem;
+        min-width: 70px;
+        text-align: center;
+        border: 1px solid var(--primary-background);
     }
 
     .weather-box {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin: 1rem auto;
         width: 100%;
-        max-width: 400px;
         gap: 1rem;
         position: relative;
         border-radius: 8px;
-        box-shadow: 0 2px 5px var(--accent-background);
     }
 
     .weather-box img {
@@ -286,6 +472,7 @@ h1 {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        gap: 0.5rem;
     }
 
     .weather-box .weather-info p {
@@ -298,6 +485,38 @@ h1 {
         font-weight: 400;
     }
 
+    
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "social social social"
+        "contact contact copyright";
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
+.social {
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
+.contact-info {
+    grid-area: contact;
+    text-align: center;
+}
 
+.copyright-text {
+    grid-area: copyright;
+    text-align: center;
+}
+
+.sociallinks a img {
+    width: 45px;
+    height: 45px;
+}

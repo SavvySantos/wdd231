@@ -15,13 +15,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./styles/final.css">
-    <link rel="stylesheet" href="./styles/final-medium.css">
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-medium.css">
     <link rel="stylesheet" href="./styles/final-large.css">
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script type="module" src="scripts/events.js"></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/location.js" defer></script>
+
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -30,17 +34,19 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="images/tacos-bravo-transparent.webp" alt="Tacos Bravo Logo" loading="lazy">
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/tacos-bravo-transparent.webp" alt="Tacos Bravo Logo" loading="lazy">
+            </div>
+            <button id="ham-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="#" class="current">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="content-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <button id="ham-button" class="hamburger" aria-label="Toggle navigation menu"></button>
-        <nav id="nav-bar" class="navigation">
-            <ul>
-                <li><a href="#" class="current">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="content-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <h1 class="page-title">Tacos Bravo</h1>
@@ -55,14 +61,25 @@
             </div>
             </section>
             <section class="home-sections">
-                <section class="monthly-events">
-                    <h2>Our months events!</h2>         
+
+                <section class="weekly-locations">
+                    <h2>Where We'll Be This Week!</h2>
+                    <div id="location-cards"></div>
                 </section>
+
+                <section class="monthly-events">
+                    <h2>Our Months Events!</h2>
+                    <div id="event-buttons" class="events"></div>
+                    <dialog id="event-details"></dialog>
+                </section>
+
                 <section class="current-weather-container">
                     <h2>Weather Forcast</h2>
-                    <div class="weather-box">
+                    <div class="weather-card">
+                        <div class="current-weather">
                         <h3>Current Weather | Cedar City, Utah</h3>
-                        <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" loading="lazy">
+                        <div class="weather-box">
+                            <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" loading="lazy">
                         <div class="weather-info">
                             <p class="current-temp">Current Temperature: </p>
                             <p id="weather-desc"></p>
@@ -71,31 +88,31 @@
                             <p>Humidity: <span id="humidity"></span></p>
                             <p>Sunrise: <span id="sunrise"></span></p>
                             <p>Sunset: <span id="sunset"></span></p>
-                            <section id="weather-forecast">
-                                <div id="forecast-container">
-                                    <h3>7-Day Weather Forecast</h3>
-                                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" width="100" height="100" loading="lazy">
-                                    <div id="forecast"></div>
-                                </div>
-                            </section>
                         </div>
-                    </div>
+                        </div>
+                            <h3>5-Day Weather Forecast</h3>
+                            <div id="forecast"></div>
+                                    </div>
+                                    </div>
+                                </section>
                 </section>
             </section>
         </section>
     </main>
     <footer>
         <div class="footer-container">
-            <div class="chamber-info">
-                <p>Cedar City Chamber of Commerce</p>
-                <p>123 Main Street, Cedar City, UT 84720</p>
-                <p>(435)123-4567</p>
-            </div>
             <div class="social">
                 <a href="https://www.facebook.com/savanah.bryant"><img src="images/facebook.svg" alt="Facebook" width="45" height="45" loading="lazy"></a>
                 <a href="https://www.instagram.com/savanahbryant50/"><img src="images/instagram.svg" alt="Instagram" width="45" height="45" loading="lazy"></a>
             </div>
-            <div class="copyright">
+
+            <div class="contact-info">
+                <p>Tacos Bravo</p>
+                <p>Hugo Santos: (435)590-5701</p>
+                <p>Savanah Santos(435)215-8382</p>
+            </div>
+            
+            <div class="copyright-text">
                 <p>&copy;<span id="currentyear"></span>💕Savanah Santos💕 Utah USA</p>
                 <p class="modified">Last modified: <span id="lastmodified"></span></p>
             </div>

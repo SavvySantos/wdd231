@@ -74,7 +74,7 @@ function displayForecast(forecastData) {
         card.classList.add('forecast-day-card');
 
         card.innerHTML = `
-        <h3>${date.toLocaleDateString(undefined, { weekday: 'long'})}</h3>
+        <h4>${date.toLocaleDateString(undefined, { weekday: 'long'})}</h4>
         <p>${temp} °F</p>
         `;
         forecastContainer.appendChild(card);
@@ -107,7 +107,7 @@ function displayResults(weatherData) {
 
     const desc = weatherData.weather[0].description;
     const weatherDesc = document.getElementById('weather-desc');
-    document.querySelector('#weather-desc').innerHTML = `<strong>${weatherDesc}</strong>`;
+    document.querySelector('#weather-desc').textContent = `<strong>${weatherDesc}</strong>`;
     if (weatherDesc) {
         weatherDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
     }

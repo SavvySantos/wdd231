@@ -1,3 +1,6 @@
+@media (min-width: 64rem) {
+
+
 :root {
 --white: #FDFEff;
 --accent-background: #FBDE53ff;
@@ -6,50 +9,50 @@
 --highlight: #F25259ff;
 }
 
-.hero {
-    position: relative;
+.home-sections {
+    display: grid;
+    grid-template-areas: 
+        "locations locations"
+        "events weather";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    justify-items: center;
+    align-items: start;
     width: 100%;
-    height: auto;
-    background-image: url('images/tacos-hero.jpg');
-    max-height: 400px;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.monthly-events {
+    grid-area: events;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.current-weather-container {
+    grid-area: weather;
+    width: 90%;
+}
+
+.weekly-locations {
+    grid-area: locations;
+    width: 100%;
+}
+
+#location-cards {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-.hero-container {
-    padding: 0 1rem;
-    width: 100%;
-}
+   .events {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
-.hero-image {
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-    display: block;
-    object-fit: cover;
-}
-
-.about-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: clamp(80%, 60vw, 800px);
-    max-width: 800px;
-    background-color: rgba(225, 225, 225, 0.60);
-    padding: clamp(1rem, 2vw, 2.5rem);
-    border-radius: 1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    text-align: center;
-}
-
-.about-us {
-    font-size: clamp(1rem, 2vw, 2rem);
-    line-height: 1.5;
+    .weekly-locations .event-card {
+        width: 100%;
+        text-align: left;
+    }
 }
