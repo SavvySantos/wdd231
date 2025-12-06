@@ -70,11 +70,10 @@ header {
 }
 
 .logo img {
-    max-height: 350px;
+    max-height: 250px;
     height: 100%;
     width: auto;
     display: block;
-    
 }
 
 #ham-button {
@@ -95,6 +94,12 @@ header {
     flex-shrink: 0;
 }
 
+.navigation {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .navigation ul {
     list-style-type: none;
     display: none;
@@ -102,7 +107,6 @@ header {
     text-align: center;
     align-items: center;
     width: 100%;
-    gap: 1rem;
     z-index: 5;
 }
 
@@ -269,7 +273,7 @@ h1 {
     .location-cards {
         background-color: var(--card-background);
         border: .50rem solid var(--accent-background);
-        padding: 1.5rem;
+        padding: .70rem;
         max-width: 1100px;
         border-radius: 1rem;
         box-shadow: 0 0 10px rgba(0,0,0,0.25);
@@ -415,10 +419,9 @@ h1 {
     .events-card {
         background-color: lightgray;
         border-radius: 12px;
-        padding: 1rem;
+        padding: .60rem;
         box-shadow: 0 2px 5px var(--primary-background);
         width: 100%;
-        max-width: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -428,7 +431,8 @@ h1 {
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .forecast-day-card {
@@ -436,9 +440,10 @@ h1 {
         margin-bottom: 0.5rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        justify-content: center;
         padding: 1rem;
-        min-width: 70px;
+        min-width: 60px;
+        width: 120px;
         text-align: center;
         border: 1px solid var(--primary-background);
     }
@@ -449,16 +454,15 @@ h1 {
         justify-content: center;
         margin: 1rem auto;
         width: 100%;
-        gap: 1rem;
         position: relative;
         border-radius: 8px;
     }
 
     .weather-box img {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         flex-shrink: 0;
-        width: 100px;
-        height: 100px;
     }
 
     .weather-box img#weather-icon {
@@ -472,7 +476,6 @@ h1 {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        gap: 0.5rem;
     }
 
     .weather-box .weather-info p {
@@ -484,6 +487,10 @@ h1 {
         font-size: 2rem;
         font-weight: 400;
     }
+    
+
+
+
 
     
 .footer-container {

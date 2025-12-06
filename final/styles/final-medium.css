@@ -13,6 +13,10 @@
     --card-background: #BF4834ff;
     --highlight: #F25259ff;
     }
+
+    .logo {
+        margin-left: 1rem;
+    }
     
     .header-top {
         display: flex;
