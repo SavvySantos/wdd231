@@ -1,0 +1,67 @@
+{
+    "menu": [
+        {
+            "name":"Carne Asada Street Taco",
+            "description": "Chopped up grilled steak on two corn tortillas, topped with onions, cilantro, and a lime wedge.",
+            "price": 3.00
+        },
+        {
+            "name":"Al Pastor Street Taco",
+            "description": "Chopped up grilled, marinated pork on two corn tortillas, topped with onions, cilantro, and a lime wedge.",
+            "price": 3.00
+        },
+        {
+            "name":"Pollo Street Taco",
+            "description": "Chopped up grilled chicken on two corn tortillas, topped with onions, cilantro, and a lime wedge.",
+            "price": 3.00
+        },
+        {
+            "name":"Nachos",
+            "description": "Crispy tortilla chips with melted cheese and tomatoes, and jalapenos. Add your choice of seasoned meat for a fully loaded option.",
+            "price": 7.00,
+            "loadedPrice": 10.00
+        },
+        {
+            "name":"Quesabirria",
+            "description": "Crispy, cheesy quesadillas filled with tender birria-style meat, served with a rich consomme for dipping. A Perfect blend of flavors and textures in every bite.",
+            "price": 4.00,
+            "deal": {
+                "quantity": 3,
+                "price": 10.00
+            }
+        },
+        {
+            "name":"Quesadilla",
+            "description": "Golden, Melted cheese folded in a warm corn tortilla. Add your choice of meat for just $1.00 to make it extra hearty.",
+            "price": 3.00,
+            "extraMeatPrice": 1.00,
+            "deal": {
+                "quantity": 3,
+                "price": 10.00,
+                "requiresExtraMeat": true
+            }
+        },
+        {
+            "name":"Tortas",
+            "description": "Fresh sandwich rolls loaded with ham, hot dogs, tomatoes, mayonnaise, lettuce, and your choice of meat. Served on high-quality bakery bread for a satisfying handheld meal.",
+            "price": 10.00
+        },
+        {
+            "name":"Flautas",
+            "description": "4 Crispy, tightly rolled corn tortillas, stuffed with shredded chicken, fried to perfection, and served with sour cream, guacamole, tomatoes, and queso cotija for a crunchy, delicious bite.",
+            "price": 8.00        
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Jarritos",
+            "description": "Mexican soda in assorted flavors",
+            "price": 3.00
+        },
+        {
+        "name": "Water",
+        "description": "Bottled water",
+        "price": 1.00
+        }
+    ]
+}

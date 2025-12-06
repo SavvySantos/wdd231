@@ -530,3 +530,71 @@ h1 {
     width: 45px;
     height: 45px;
 }
+
+/*******************************************
+* 10. MENU PAGE
+*******************************************/
+.menu-card {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+        "name dots price"
+        "desc desc desc";
+    grid-template-columns: auto 1fr auto;
+    row-gap: 5px;
+    align-items: center;
+    background-color: var(--white);
+    padding: 12px 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    font-family: "Work Sans", sans-serif;
+    max-width: 1100px;
+    border: .25rem solid var(--accent-background);
+}
+
+.menu-top {
+    position: relative;
+    align-items: center;
+    gap: 10px;
+    z-index: 0;
+}
+
+.menu-name {
+    grid-area: name;
+    font-weight: 700;
+}
+
+.menu-dots {
+    grid-area: dots;
+    margin: 0 8px;
+}
+
+.menu-price {
+    grid-area: price;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.menu-desc {
+    grid-area: desc;
+    color: #333;
+}
+
+.menu-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: calc(100% * 0 + 80px);
+    right: calc(100% * 0 + 80px);
+    border-bottom: 1px dashed #aaa;
+    z-index: 0;
+}
+
+.menu-name,
+.menu-price,
+.menu-desc {
+    padding: 0 5px;
+    z-index: 1;
+}
