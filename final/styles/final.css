@@ -535,7 +535,6 @@ h1 {
 * 10. MENU PAGE
 *******************************************/
 .menu-card {
-    position: relative;
     display: grid;
     grid-template-areas: 
         "name dots price"
@@ -553,21 +552,28 @@ h1 {
     border: .25rem solid var(--accent-background);
 }
 
-.menu-top {
-    position: relative;
-    align-items: center;
-    gap: 10px;
-    z-index: 0;
-}
-
 .menu-name {
     grid-area: name;
     font-weight: 700;
+    padding: 0 5px;
+    z-index: 1;
+    position: relative;
 }
 
 .menu-dots {
     grid-area: dots;
-    margin: 0 8px;
+    position: relative;
+}
+
+.menu-dots::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-bottom: 1.5px dashed #aaa;
+    transform: translateY(-50%);
+    z-index: 0;
 }
 
 .menu-price {
@@ -575,6 +581,8 @@ h1 {
     font-weight: 700;
     white-space: nowrap;
     text-align: right;
+    position: relative;
+    z-index: 1;
 }
 
 .menu-desc {
@@ -582,19 +590,10 @@ h1 {
     color: #333;
 }
 
-.menu-card::before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: calc(100% * 0 + 80px);
-    right: calc(100% * 0 + 80px);
-    border-bottom: 1px dashed #aaa;
-    z-index: 0;
-}
-
 .menu-name,
-.menu-price,
-.menu-desc {
+.menu-price {
+    position: relative;
+    background: var(--white);
     padding: 0 5px;
     z-index: 1;
 }

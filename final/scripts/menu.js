@@ -24,6 +24,7 @@ function displayCategory(categoryId, items) {
 
         div.innerHTML = `
             <span class="menu-name">${item.name}</span>
+            <span class="menu-dots"></span>
             <span class="menu-price">${priceText}</span>
             <span class="menu-desc">${item.description}</span>
         `;
