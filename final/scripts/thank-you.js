@@ -1,11 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const form = document.querySelector("#contactForm");
-
-    form.addEventListener("submit", () => {
-        ts.value = Date.now();
-    });
-
     const params = new URLSearchParams(window.location.search);
     const fname = params.get('first');
     const lname = params.get('last');
