@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos Bravo | Contact Us</title>
+    <meta name="description" content="Tacos Bravo's website, created in 2025 by Savanah Santos as her WDD231 final project. This is her Contact Us page.">
+    <meta name="author" content="Savanah Santos">
+    <meta property="og:title" content="Home Page">
+    <meta property="og:description" content="Tacos Bravo showcases delicious Mexican street food and was crafted by Savanah Santos in 2025 as her WDD231 final project">
+    <meta property="og:image" content="https://savvysantos.github.io/wdd231/final/tacos-quesabirrias-1.jpg">
+    <meta property="og:url" content="https://savvysantos.github.io/wdd231/final/contact-us.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-medium.css">
+    <link rel="stylesheet" href="./styles/final-large.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thank-you.js" defer></script>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/tacos-bravo-transparent.webp" alt="Tacos Bravo Logo" loading="lazy" height="50" width="50">
+            </div>
+            <button id="ham-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="thankyou-container">
+        <h1>Thank you for contacting us!</h1>
+        <p>We will reach out to you as soon as we can!</p>
+
+        <section class="thankyou-card">
+            <h2>Submission Details</h2>
+
+            <p><strong>First Name: <span id="first"></span></strong></p>
+            <p><strong>Last Name: <span id="last"></span></strong></p>
+            <p><strong>Email: <span id="email"></span></strong></p>
+            <p><strong>Phone: <span id="number"></span></strong></p>
+            <p><strong>Date of Event: <span id="date"></span></strong></p>
+            <p><strong>Food Requested: <span id="food"></span></strong></p>
+            <p><strong>Description of Event: <span id="description"></span></strong></p>
+
+        </section>
+    </main>
+    
+        <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p>Tacos Bravo</p>
+                <p>Hugo Santos: (405)590-5701</p>
+                <p>Savanah Santos: (405)215-8382</p>
+            </div>
+            
+            <div class="social">
+                <a href="https://www.facebook.com/savanah.bryant"><img src="images/facebook.svg" alt="Facebook" width="45" height="45" loading="lazy"></a>
+                <a href="https://www.instagram.com/savanahbryant50/"><img src="images/instagram.svg" alt="Instagram" width="45" height="45" loading="lazy"></a>
+            </div>
+            
+            <div class="copyright-text">
+                <p>&copy;<span id="currentyear"></span>💕Savanah Santos💕 Utah USA</p>
+                <p class="modified">Last modified: <span id="lastmodified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
