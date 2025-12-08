@@ -716,7 +716,7 @@ body.contact-us .main-layout {
 }
 
 .contact-info-card {
-    background-color: var(--card-background), #fff;
+    background-color: var(--card-background);
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 1.5rem;
