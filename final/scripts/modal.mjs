@@ -31,7 +31,7 @@ function displayButtons() {
             card.innerHTML = `
             <h3>${event.name}</h3>
             <p class="date">${event.location}</p>
-            <button class="event-ifo">❌</button>
+            <button class="event-info">❌</button>
             `;
 
             const eventBtn = card.querySelector('.event-info');
@@ -60,5 +60,5 @@ function displayButtons() {
         });
     }
     
-    displayEventInfo();
+    displayButtons();
 });
