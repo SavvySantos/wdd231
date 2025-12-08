@@ -47,4 +47,19 @@
     .events {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contact-us-container {
+        display: grid;
+        grid-template-areas: 
+        "form box";
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contact-us-container form,
+    .contact-info-card {
+        flex: 1;
+        max-width: 500px;
+    }
+
 }

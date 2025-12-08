@@ -30,7 +30,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 
-<body>
+<body class="contact-us">
     <header>
         <div class="header-top">
             <div class="logo">
@@ -48,6 +48,7 @@
     </header>
     <main>
         <h2>Contact us for your next event!</h2>
+        <div class="contact-us-container">
         <div class="main-layout">
             <form method="get" action="thankyou.html" class="conf">
                 <fieldset>
@@ -61,18 +62,44 @@
                         <input type="email" id="email" name="email" autocomplete="email" title="Enter your email: " placeholder="someone123@gmail.com" required></label>
                     <label for="number">Phone Number:*  
                         <input type="tel" id="number" name="number" autocomplete="tel" title="Enter your phone number: " required></label>
-
+                    <fieldset>
+                        <legend>Event Info</legend>
                     <label for="event-date">Event Date:*
                         <input type="date" id="event-date" name="event-date" required></label>
 
+
+                    <label>Select what you would like to have at your event:</label>
+                        <label class="check-item"><input type="checkbox" name="options" value="tacos">Tacos</label>
+                        <label class="check-item"><input type="checkbox" name="options" value="nachos">Nachos</label>
+                        <label class="check-item"><input type="checkbox" name="options" value="Quesabirrias">Quesabirrias</label>
+                        <label class="check-item"><input type="checkbox" name="options" value="Quesadillas">Quesadillas</label>
+                        <label class="check-item"><input type="checkbox" name="options" value="drinks">Drinks</label>
+
                     <label for="description">Event Description:*  
                         <textarea id="description" name="description" title="description" rows="5" required></textarea></label>
+                    </fieldset>
                     <input type="hidden" id="timestamp" name="timestamp">
                 </fieldset>
                 <input type="submit" value="Contact Tacos Bravo!">
             </form>
             <div class="level-buttons"></div>
             <dialog id="level-details"></dialog>
+        </div>
+
+        <div class="contact-info-card">
+            <h3>Contact Information</h3>
+
+            <p><strong>Hugo Santos: </strong>(405)590-5701</p>
+            <p><strong>Savanah Santos: </strong>(405)215-8382</p>
+            <p><strong>Email: </strong>tacosbravo01@gmail.com</p>
+
+            <h4>Business Hours</h4>
+            <p>Monday - Friday: 10:00 AM - 7:00PM</p>
+            <p>Saturday: 10:00 AM - 5:00 PM</p>
+            <p>Sunday: Closed</p>
+
+            <p><strong>Closed on Major Holidays</strong></p>
+    </div>
         </div>
         </main>
     <footer>
