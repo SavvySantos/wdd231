@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const savedTimestamp = localStorage.getItem("formTimeStamp");
+    document.querySelector("#timestampDisplay").textContent = savedTimestamp;
+});
+
+document.addEventListener("DOMContentLoaded", () => {
 
     const params = new URLSearchParams(window.location.search);
     const fname = params.get('first');
