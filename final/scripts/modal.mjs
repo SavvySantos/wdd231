@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const eventList = document.querySelector("#event-details");
-    const buttonContainer = document.querySelector("event-buttons");
+    const buttonContainer = document.querySelector("#event-buttons");
 
     const events = [
     {
